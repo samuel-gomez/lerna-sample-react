@@ -1,0 +1,14 @@
+{
+  "name": "@samuelgomez/sg-header",
+  "version": "0.0.1",
+  "description": "header component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel Gomez",
+  "license": "ISC",
+  "dependencies": {
+    "@samuelgomez/sg-title": "^0.0.1"
+  }
+}

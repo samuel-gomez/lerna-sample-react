@@ -1,0 +1,14 @@
+{
+  "name": "@samuelgomez/sg-title",
+  "version": "0.0.1",
+  "description": "title component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "title"
+  ],
+  "author": "Samuel Gomez",
+  "license": "ISC"
+}
