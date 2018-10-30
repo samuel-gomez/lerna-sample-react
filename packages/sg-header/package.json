@@ -2,13 +2,24 @@
   "name": "@samuelgomez/sg-header",
   "version": "0.0.1",
   "description": "header component",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "jsnext:main": "src/index.js",
+  "private": false,
   "scripts": {
+    "prepare": "node ../../scripts/prepare.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "dist/"
+  ],
   "author": "Samuel Gomez",
   "license": "ISC",
   "dependencies": {
     "@samuelgomez/sg-title": "^0.0.1"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   }
 }

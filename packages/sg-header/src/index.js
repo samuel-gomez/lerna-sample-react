@@ -2,13 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Title from '@samuelgomez/sg-title';
 
-const Header = () => {
-  return (
-    <header>
-      <Title name="Samuel" />
-    </header>
-  );
-};
+const Header = () => <h1>Samuel</h1>;
 
 Header.propTypes = {};
 
