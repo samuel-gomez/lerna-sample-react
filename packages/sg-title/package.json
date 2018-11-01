@@ -17,6 +17,9 @@
   ],
   "author": "Samuel Gomez",
   "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
   "peerDependencies": {
     "prop-types": "^15.5.10",
     "react": "^16.4.1",

@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "cacheDirectory": ".cache/jest",
+  "roots": ["<rootDir>/packages", "<rootDir>/app/src"],
+  "testPathIgnorePatterns": ["/node_modules/", "<rootDir>/app/node_modules/"],
+  "setupFiles": ["<rootDir>/scripts/jest.init.js"],
+  "collectCoverageFrom": [
+    "packages/**/*.{js,jsx,tsx}",
+    "app/src/**/*.{js,jsx,tsx}",
+    "!**/dist/**",
+    "!**/storybook/**",
+    "!packages/**/src/index.{js,ts}"
+  ],
+  "collectCoverage": false,
+  "moduleFileExtensions": ["ts", "tsx", "js"],
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+    "\\.(scss|css|less|md)$": "<rootDir>/__mocks__/styleMock.js"
+  },
+  "transform": {
+    "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+  },
+  "testRegex": "(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$"
+}
