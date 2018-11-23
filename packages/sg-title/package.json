@@ -18,7 +18,8 @@
   "author": "Samuel Gomez",
   "license": "ISC",
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "@samuelgomez/storybook-addons": "^0.0.1"
   },
   "peerDependencies": {
     "prop-types": "^15.5.10",

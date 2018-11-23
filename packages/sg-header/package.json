@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@samuelgomez/sg-title": "^0.0.1",
+    "@samuelgomez/storybook-addons": "^0.0.1",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
