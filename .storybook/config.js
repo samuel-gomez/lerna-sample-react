@@ -5,7 +5,7 @@ import infoAddon from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs';
 import { setOptions } from '@storybook/addon-options';
 
-import './storybook.css';
+import './storybook.scss';
 
 setOptions({
   name: 'LERNA & CRA',

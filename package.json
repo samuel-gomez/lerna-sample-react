@@ -11,13 +11,13 @@
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@storybook/core": "^4.0.8",
     "@storybook/addon-actions": "^4.0.8",
     "@storybook/addon-info": "^4.0.8",
     "@storybook/addon-knobs": "^4.0.8",
     "@storybook/addon-links": "^4.0.8",
     "@storybook/addon-options": "^4.0.8",
     "@storybook/addon-storyshots": "^4.0.8",
+    "@storybook/core": "^4.0.8",
     "@storybook/react": "^4.0.8",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.4",
@@ -32,10 +32,11 @@
     "jest": "^23.6.0",
     "lerna": "^3.3.1",
     "markdown-loader": "^4.0.0",
+    "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "storybook": "^1.0.0",
     "storybook-readme": "^4.0.2",
-    "webpack": "^4.19.1"
+    "webpack": "^4.27.1"
   },
   "dependencies": {
     "babel-plugin-require-context-hook": "^1.0.0",
