@@ -14,15 +14,22 @@ setOptions({
   hierarchyRootSeparator: /\|/
 });
 
-const reqPkg = require.context('../packages', true, /\**.stories.js$/);
+/* const reqPkg = require.context('../packages', true, /\**.stories.js$/);
 const reqApp = require.context('../app/src', true, /\**.stories\.js$/);
 var reqs = [];
 
 reqPkg.keys().forEach(filename => reqs.push(reqPkg(filename)));
 reqApp.keys().forEach(filename => reqs.push(reqApp(filename)));
+ */
+
+const req = require.context('../app/src', true, /\**.stories.js$/);
 
 function loadStories() {
-  reqs.forEach(req => req);
+  require('../packages/sg-header/src/Header.stories');
+  require('../packages/sg-title/src/Title.stories');
+
+  req.keys().forEach(filename => req(filename));
+  //reqs.forEach(req => req);
 }
 
 addDecorator(withKnobs);
