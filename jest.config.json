@@ -9,7 +9,8 @@
     "app/src/**/*.{js,jsx,tsx}",
     "!**/dist/**",
     "!**/storybook/**",
-    "!packages/**/src/index.{js,ts}"
+    "!packages/**/src/index.{js,ts}",
+    "!packages/**/src/*.stories.{js,ts}"
   ],
   "collectCoverage": false,
   "moduleFileExtensions": ["ts", "tsx", "js"],

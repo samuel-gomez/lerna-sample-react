@@ -6,7 +6,8 @@
     "bootstrap": "cross-env NODE_ENV=development  lerna bootstrap",
     "publish": "lerna publish --registry http://localhost:4873/",
     "test": "jest --config jest.config.json",
-    "storybook": "start-storybook -p 9999 -s .storybook"
+    "storybook": "start-storybook -p 9999 -s .storybook",
+    "cover": "npm run test -- --coverage"
   },
   "devDependencies": {
     "@babel/core": "^7.1.6",
