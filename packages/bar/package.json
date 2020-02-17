@@ -1,0 +1,16 @@
+{
+  "name": "@samuelgomez/bar",
+  "version": "0.0.1",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepare": "node ../../scripts/prepare.js",
+    "clean": "rm -rf ./dist"
+  },
+  "devDependencies": {
+    "typescript": "~3.4.5"
+  }
+}

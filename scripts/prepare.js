@@ -21,8 +21,8 @@ function copyLicence() {
 function logError(type, packageJson) {
   log.error(
     `FAILED to compile ${type}: ${chalk.bold(
-      `${packageJson.name}@${packageJson.version}`
-    )}`
+      `${packageJson.name}@${packageJson.version}`,
+    )}`,
   );
 }
 
@@ -39,6 +39,6 @@ copyLicence();
 
 console.log(
   chalk.gray(
-    `Built: ${chalk.bold(`${packageJson.name}@${packageJson.version}`)}`
-  )
+    `Built: ${chalk.bold(`${packageJson.name}@${packageJson.version}`)}`,
+  ),
 );

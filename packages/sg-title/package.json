@@ -7,6 +7,7 @@
   "private": false,
   "scripts": {
     "prepare": "node ../../scripts/prepare.js",
+    "clean": "rm -rf ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
@@ -18,8 +19,7 @@
   "author": "Samuel Gomez",
   "license": "ISC",
   "dependencies": {
-    "prop-types": "^15.5.10",
-    "@samuelgomez/storybook-addons": "^0.0.1"
+    "prop-types": "^15.5.10"
   },
   "peerDependencies": {
     "prop-types": "^15.5.10",

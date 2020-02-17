@@ -7,7 +7,7 @@
   "collectCoverageFrom": [
     "packages/**/*.{js,jsx,tsx}",
     "app/src/**/*.{js,jsx,tsx}",
-    "!**/dist/**",
+    "!packages/**/dist/**",
     "!**/storybook/**",
     "!packages/**/src/index.{js,ts}",
     "!packages/**/src/*.stories.{js,ts}"
@@ -19,7 +19,8 @@
     "\\.(scss|css|less|md)$": "<rootDir>/__mocks__/styleMock.js"
   },
   "transform": {
-    "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    ".(js|jsx)": "<rootDir>/node_modules/babel-jest",
+    ".(ts|tsx)": "ts-jest"
   },
   "testRegex": "(/test/.*|\\.(test|spec))\\.(ts|tsx|js)$"
 }

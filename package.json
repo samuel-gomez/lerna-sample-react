@@ -3,8 +3,11 @@
   "private": true,
   "scripts": {
     "start": "npm -C ./app run start",
-    "bootstrap": "cross-env NODE_ENV=development  lerna bootstrap",
-    "publish": "lerna publish --registry http://localhost:4873/",
+    "bootstrap": "cross-env NODE_ENV=development lerna bootstrap",
+    "publish": "lerna publish",
+    "publish:local": "lerna publish --registry http://localhost:4873/",
+    "clean:module": "lerna clean",
+    "clean:dist": "lerna run clean",
     "test": "jest --config jest.config.json",
     "storybook": "start-storybook -p 9999 -s .storybook",
     "cover": "npm run test -- --coverage"
@@ -20,6 +23,7 @@
     "@storybook/addon-storyshots": "^4.0.8",
     "@storybook/core": "^4.0.8",
     "@storybook/react": "^4.0.8",
+    "@types/node": "^13.7.1",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
@@ -34,36 +38,23 @@
     "lerna": "^3.3.1",
     "markdown-loader": "^4.0.0",
     "node-sass": "^4.11.0",
+    "react-test-renderer": "^16.12.0",
     "sass-loader": "^7.1.0",
     "storybook": "^1.0.0",
     "storybook-readme": "^4.0.2",
+    "ts-jest": "^25.2.0",
     "webpack": "^4.27.1"
   },
   "dependencies": {
+    "@types/jest": "^25.1.2",
     "babel-plugin-require-context-hook": "^1.0.0",
     "chalk": "^2.4.1",
     "npmlog": "^4.1.2",
     "path": "^0.12.7",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "save-dev": "^2.0.0",
-    "shelljs": "^0.8.2"
-  },
-  "jest": {
-    "collectCoverageFrom": [
-      "!<rootDir>/node_modules/"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 90,
-        "functions": 90,
-        "lines": 90,
-        "statements": 90
-      }
-    },
-    "coverageReporters": [
-      "text"
-    ]
+    "shelljs": "^0.8.2",
+    "typescript": "^3.7.5"
   },
   "browserslist": [
     ">0.2%",

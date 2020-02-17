@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title> should render a Title 1`] = `
+<p>
+  Titless
+</p>
+`;
